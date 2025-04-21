@@ -1,0 +1,19 @@
+[project]
+name = "servo-client"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Eric Busboom", email = "eric@busboom.org" }
+]
+requires-python = ">=3.9"
+dependencies = [
+    "pyserial>=3.5",
+]
+
+[project.scripts]
+servo-client = "servo_client:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
